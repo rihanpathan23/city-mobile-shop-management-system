@@ -1,5 +1,11 @@
-function CustomerRoutes() {
-  return <h1>Customer Routes</h1>;
+import { Outlet } from "react-router-dom";
+
+function CustomerLayout() {
+  return (
+    <>
+      <Outlet />
+    </>
+  );
 }
 
-export default CustomerRoutes;
+export default CustomerLayout;

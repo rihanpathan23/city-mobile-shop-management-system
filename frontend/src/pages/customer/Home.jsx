@@ -1,5 +1,5 @@
-function Dashboard() {
-  return <h1>Dashboard</h1>;
+function Home() {
+  return <h1>Welcome to City Mobile Shop</h1>;
 }
 
-export default Dashboard;
+export default Home;
