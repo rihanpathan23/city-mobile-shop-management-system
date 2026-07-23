@@ -3,7 +3,8 @@ import { createBrowserRouter } from "react-router-dom";
 // Line 3 aur 4 ko badal kar aisa likhein:
 import CustomerLayout from "../layout/CustomerLayout";
 import AdminLayout from "../layout/AdminLayout.jsx";
-
+import ForgotPassword from "../pages/admin/ForgotPassword";
+import ResetPassword from "../pages/admin/ResetPassword";
 // Guard
 import ProtectedRoute from "./ProtectedRoute";
 
@@ -44,4 +45,12 @@ export const router = createBrowserRouter([
     path: "*",
     element: <div style={{ padding: "2rem", textAlign: "center" }}><h2>404 - Page Not Found</h2></div>,
   },
+  {
+  path: "/forgot-password",
+  element: <ForgotPassword />,
+},
+{
+  path: "/reset-password",
+  element: <ResetPassword />,
+},
 ]);
