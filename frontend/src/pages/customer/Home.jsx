@@ -1,4 +1,5 @@
 import Navbar from "../../components/layout/Navbar";
+import CategorySection from "../../components/product/CategorySection";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
           Buy Second-Hand Phones, Covers, Chargers, Earphones and Accessories.
         </p>
       </div>
+       <CategorySection />
     </>
   );
 }
