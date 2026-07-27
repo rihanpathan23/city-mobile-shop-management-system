@@ -2,32 +2,36 @@ function AddProduct() {
   return (
     <div style={{ padding: "30px" }}>
       <h1>Add New Product</h1>
+<form
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    gap: "15px",
+    maxWidth: "400px",
+    marginTop: "20px",
+  }}
+>
+  <label>Product Name</label>
+  <input type="text" placeholder="Enter Product Name" />
 
-      <form
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "15px",
-          maxWidth: "400px",
-          marginTop: "20px",
-        }}
-      >
-        <input type="text" placeholder="Product Name" />
+  <label>Brand</label>
+  <input type="text" placeholder="Enter Brand Name" />
 
-        <input type="text" placeholder="Brand" />
+  <label>Category</label>
+  <input type="text" placeholder="Select Category" />
 
-        <input type="text" placeholder="Category" />
+  <label>Price (₹)</label>
+  <input type="number" placeholder="Enter Price" />
 
-        <input type="number" placeholder="Price" />
+  <label>Quantity</label>
+  <input type="number" placeholder="Enter Quantity" />
 
-        <input type="number" placeholder="Quantity" />
+  <label>Description</label>
+  <textarea placeholder="Write Product Description"></textarea>
 
-        <textarea placeholder="Description"></textarea>
-
-        <button type="submit">
-          Save Product
-        </button>
-      </form>
+  <button type="submit">Save Product</button>
+</form>
+     
     </div>
   );
 }
