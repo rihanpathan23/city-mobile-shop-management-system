@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
 
 const ProductCard = ({
   image,
@@ -94,8 +96,14 @@ const ProductCard = ({
           </svg>
           <span className="text-sm font-semibold">Contact on WhatsApp</span>
         </button>
+              <Link to="/product/1">
+              ...
+             </Link>
+             
       </div>
     </div>
+    
+    
   );
 };
 

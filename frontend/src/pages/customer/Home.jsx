@@ -1,40 +1,20 @@
 import Navbar from "../../components/layout/Navbar";
+import Hero from "../../components/layout/Hero";
 import CategorySection from "../../components/products/CategorySection";
 import SearchBar from "../../components/products/SearchBar";
+import ProductGrid from "../../components/products/ProductGrid";
 import Footer from "../../components/layout/Footer";
 
 function Home() {
   return (
     <>
-      {/* Navigation */}
       <Navbar />
-
-      {/* Hero Section (Temporary) */}
-      <section
-        style={{
-          padding: "60px 20px",
-          textAlign: "center",
-        }}
-      >
-        <h1>Welcome to City Mobile Shop</h1>
-
-        <p style={{ marginTop: "10px" }}>
-          Buy Second-Hand Phones, Covers, Chargers, Earphones and Accessories.
-        </p>
-      </section>
-
-      {/* Categories */}
+      <Hero />
       <CategorySection />
-
-      {/* Search */}
-      <SearchBar />
-
-      {/* Product Grid (Coming Next) */}
-      {/* <ProductGrid /> */}
-
-      {/* Footer */}
+      <ProductGrid />
       <Footer />
     </>
+    
   );
 }
 

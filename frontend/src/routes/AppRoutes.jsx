@@ -12,16 +12,19 @@ import ProtectedRoute from "./ProtectedRoute";
 import Home from "../pages/customer/Home";
 import Login from "../pages/admin/Login";
 import Dashboard from "../pages/admin/Dashboard";
+import ProductDetails from "../components/products/ProductDetails";
+import ProductDetails from "../pages/customer/ProductDetails";
 
 export const router = createBrowserRouter([
   // 1. Customer Public Section
-  {
-    path: "/",
-    element: <CustomerLayout />,
-    children: [
-      { index: true, element: <Home /> },
-    ],
-  },
+{
+  path: "/",
+  element: <CustomerLayout />,
+  children: [
+    { index: true, element: <Home /> },
+    { path: "product/:id", element: <ProductDetails /> },
+  ],
+},
   // 2. Admin Authentication Route
   {
     path: "/login",
@@ -53,4 +56,8 @@ export const router = createBrowserRouter([
   path: "/reset-password",
   element: <ResetPassword />,
 },
+{
+  path: "/product/:id",
+  element: <ProductDetails />,
+}
 ]);
