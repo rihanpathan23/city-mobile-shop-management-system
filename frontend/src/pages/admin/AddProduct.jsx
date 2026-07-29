@@ -18,7 +18,17 @@ function AddProduct() {
   <input type="text" placeholder="Enter Brand Name" />
 
   <label>Category</label>
-  <input type="text" placeholder="Select Category" />
+ <select>
+  <option value="">Select Category</option>
+  <option value="Mobile">Mobile</option>
+  <option value="Mobile Cover">Mobile Cover</option>
+  <option value="Charger">Charger</option>
+  <option value="Earphones">Earphones</option>
+  <option value="Smart Watch">Smart Watch</option>
+  <option value="Power Bank">Power Bank</option>
+  <option value="Tempered Glass">Tempered Glass</option>
+  <option value="Cable">Cable</option>
+</select>
 
   <label>Price (₹)</label>
   <input type="number" placeholder="Enter Price" />
@@ -33,6 +43,7 @@ function AddProduct() {
 </form>
      
     </div>
+    
   );
 }
 
