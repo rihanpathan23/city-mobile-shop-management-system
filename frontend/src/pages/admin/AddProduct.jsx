@@ -3,6 +3,7 @@ function AddProduct() {
     <div style={{ padding: "30px" }}>
       <h1>Add New Product</h1>
 <form
+
   style={{
     display: "flex",
     flexDirection: "column",
@@ -10,9 +11,16 @@ function AddProduct() {
     maxWidth: "400px",
     marginTop: "20px",
   }}
+
 >
   <label>Product Name</label>
   <input type="text" placeholder="Enter Product Name" />
+  <label>Product ID</label>
+<input
+  type="text"
+  placeholder="Auto Generated (e.g. CMS001)"
+  disabled
+/>
 
   <label>Brand</label>
   <input type="text" placeholder="Enter Brand Name" />
