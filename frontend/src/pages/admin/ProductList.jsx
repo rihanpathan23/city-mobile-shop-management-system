@@ -7,7 +7,9 @@ function ProductList() {
       category: "Mobile",
        price: 18000,
       quantity: 2,
+      image: "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf",
       },
+      
     {
   id: "CMS002",
   name: "iPhone 12",
@@ -15,7 +17,7 @@ function ProductList() {
   category: "Mobile",
   price: 35000,
   quantity: 1,
-
+  image: "https://images.unsplash.com/photo-1603899122634-f086ca5f5ddd",
     },
     
   ];
@@ -33,6 +35,16 @@ function ProductList() {
             marginTop: "10px",
           }}
         >
+            <img
+  src={product.image}
+  alt={product.name}
+  style={{
+    width: "150px",
+    height: "150px",
+    objectFit: "cover",
+    borderRadius: "10px",
+  }}
+/>
           <h3>{product.name}</h3>
           <p>ID: {product.id}</p>
           <p>Price: ₹{product.price}</p>
