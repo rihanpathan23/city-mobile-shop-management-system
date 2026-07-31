@@ -46,10 +46,7 @@ function AddProduct() {
 
   <label>Description</label>
   <textarea placeholder="Write Product Description"></textarea>
-
-  <button type="submit">Save Product</button>
-  <label>Image URL</label>
-<input
+  <input
   type="text"
   placeholder="Paste product image URL"
 />
@@ -58,6 +55,10 @@ function AddProduct() {
   alt="Preview"
   width="200"
 />
+
+  <button type="submit">Save Product</button>
+  <label>Image URL</label>
+
 </form>
      
     </div>
