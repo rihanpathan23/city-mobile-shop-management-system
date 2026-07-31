@@ -1,17 +1,23 @@
 function ProductList() {
   const products = [
     {
-      id: "CMS001",
-      name: "Samsung A52s",
-      price: 18000,
+        id: "CMS001",
+         name: "Samsung A52s",
+      brand: "Samsung",
+      category: "Mobile",
+       price: 18000,
       quantity: 2,
-    },
+      },
     {
-      id: "CMS002",
-      name: "iPhone 12",
-      price: 35000,
-      quantity: 1,
+  id: "CMS002",
+  name: "iPhone 12",
+  brand: "Apple",
+  category: "Mobile",
+  price: 35000,
+  quantity: 1,
+
     },
+    
   ];
 
   return (
@@ -31,7 +37,8 @@ function ProductList() {
           <p>ID: {product.id}</p>
           <p>Price: ₹{product.price}</p>
           <p>Quantity: {product.quantity}</p>
-
+          <p>Brand: {product.brand}</p>
+          <p>Category: {product.category}</p>
           <button>Edit</button>
           <button style={{ marginLeft: "10px" }}>Delete</button>
         </div>
