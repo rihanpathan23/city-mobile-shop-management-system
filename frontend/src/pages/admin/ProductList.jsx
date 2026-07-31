@@ -51,8 +51,17 @@ function ProductList() {
           <p>Quantity: {product.quantity}</p>
           <p>Brand: {product.brand}</p>
           <p>Category: {product.category}</p>
-          <button>Edit</button>
-          <button style={{ marginLeft: "10px" }}>Delete</button>
+          <button
+         onClick={() => console.log("Edit clicked")}
+              >
+              Edit
+          </button>
+          <button
+  onClick={() => console.log("Delete clicked")}
+  style={{ marginLeft: "10px" }}
+>
+  Delete
+</button>
         </div>
       ))}
     </div>
