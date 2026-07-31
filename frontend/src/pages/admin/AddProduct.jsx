@@ -48,6 +48,16 @@ function AddProduct() {
   <textarea placeholder="Write Product Description"></textarea>
 
   <button type="submit">Save Product</button>
+  <label>Image URL</label>
+<input
+  type="text"
+  placeholder="Paste product image URL"
+/>
+<img
+  src="https://via.placeholder.com/200"
+  alt="Preview"
+  width="200"
+/>
 </form>
      
     </div>
