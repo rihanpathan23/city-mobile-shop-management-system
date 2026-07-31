@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import CustomerLayout from "../layout/CustomerLayout";
 import Home from "../pages/customer/Home";
 import Login from "../pages/admin/Login";
+import ProductList from "../pages/admin/ProductList";
 
 export const router = createBrowserRouter([
   {
@@ -9,6 +10,7 @@ export const router = createBrowserRouter([
     element: <CustomerLayout />,
     children: [
       { index: true, element: <Home /> },
+      { path: "products", element: <ProductList /> },
     ],
   },
   {

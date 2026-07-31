@@ -26,6 +26,7 @@ export default function AdminLayout() {
       </aside>
       <main style={{ flex: 1, padding: "2rem", background: "#ecf0f1" }}>
         <Outlet />
+        
       </main>
     </div>
   );
