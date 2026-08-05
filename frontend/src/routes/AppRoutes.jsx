@@ -3,6 +3,7 @@ import CustomerLayout from "../layout/CustomerLayout";
 import Home from "../pages/customer/Home";
 import Login from "../pages/admin/Login";
 import ProductList from "../pages/admin/ProductList";
+import Sales from "../pages/admin/Sales";
 
 export const router = createBrowserRouter([
   {
@@ -17,4 +18,5 @@ export const router = createBrowserRouter([
     path: "/login",
     element: <Login />,
   },
+  { path: "/sales", element: <Sales /> },
 ]);
