@@ -5,9 +5,11 @@ function AddProduct() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+const product = {
+  name: productName,
+};
 
-    console.log("Product Saved Successfully");
-    console.log("Product Name:", productName);
+console.log(product);
   };
 
   return (
