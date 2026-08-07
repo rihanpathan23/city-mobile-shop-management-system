@@ -7,9 +7,17 @@ function AddProduct() {
     e.preventDefault();
 const product = {
   name: productName,
+  brand:brand,
 };
 
 console.log(product);
+const [brand, setBrand] = useState("");
+<input
+  type="text"
+  placeholder="Enter Brand Name"
+  value={brand}
+  onChange={(e) => setBrand(e.target.value)}
+/>
   };
 
   return (
